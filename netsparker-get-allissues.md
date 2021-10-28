@@ -22,8 +22,8 @@ GET https://www.netsparkercloud.com/api/1.0/issues/allissues
 ```javascript
 GET https://www.netsparkercloud.com/api/1.0/issues/allissues?Severity=low&page=1
 {
-  "parameter1": "low"
-  "parameter2": "1"
+  "severity": "low"
+  "page": "1"
  }
 ```
 ## Response
