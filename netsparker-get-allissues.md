@@ -17,27 +17,33 @@ GET https://www.netsparkercloud.com/api/1.0/issues/allissues
 ## Headers
 | Header Name | Description | Required | Values |
 | --- | --- | --- | --- |
-| Accept | ? | Required | ? |
+| Accept | the format of the data to be returned | optional | application/json |
 ## Sample Request
 ```javascript
 GET https://www.netsparkercloud.com/api/1.0/issues/allissues?Severity=low&page=1
 {
-  "element1": "low"
-  "element2": "1"
+  "parameter1": "low"
+  "parameter2": "1"
  }
 ```
 ## Response
-| Parameter | Description | Type | Required | Notes |
-| --- | --- | --- | --- | --- |
-| severity | The severity of the vulnerability identified | string | optional | 
-| webSiteName | the name of the website | string | optional | 
-| websiteGroupName | the name of the website group | string | optional |
-| page | the number of the page | integer | optional | 
-| pageSize | the number of vulnerabilities displayed in the single page | integer | optional | Page size can be any value between 1 and 200.|
-| sortType | Sort by ascending and descending according to LastSeenDate. | string | optional | Default parameter is ascending. |
-| lastSeenDate | the last date that the vulnerability is identified. | string | optional | You can use the date format defined in your account. You can visit /account/changesettings to view the current format.|   |
-| rawDetails | ? | string | optional | If you want the vulnerability data response (remedy, description, etc.) to return without raw html, this field must be set false. |
-| integration | ? | integer | optional | the default value is Jira.|
+| Parameter | Description | Type | Notes |
+| --- | --- | --- | --- |
+| FirstItemOnPage | ? | string |  | 
+| HasNextPage | Shows whether there is a next page | string | The value is true or false. | 
+| HasPreviousPage | Shows whether there is a previous page | string | The value is true or false. | 
+| IsFirstPage | Shows whether this is the first page | string | The value is true or false. | 
+| IsLastPage | Shows whether this is the last page | string | The value is true or false. | 
+| LastItemOnPage | Shows whether this is the last item on the page | string | The value is true or false. | 
+| List| Array of data | string |  | 
+| AssignName | the name of the person that is responsible for this vulnerability | string |  | 
+| FirstSeenDate | the data in which Netsparker identified this vulnerability | string | You can use the date format defined in your account. You can visit /account/changesettings to view the current format.  | 
+| Id | the id of the vulnerability | integer |  | 
+| IsAddressed | the action has been taken or not | string |  The value is true or false. | 
+| IsDetectedbyShark | the Netsparker Shark (IAST) identified this vulnerability or not | string |  The value is true or false. | 
+| IsPresent | the case whether the vulnerability identified still is present | string |  The value is true or false. | 
+| LastSeenDate | the last date that the vulnerability is identified. | string |  You can use the date format defined in your account. You can visit /account/changesettings to view the current format. | 
+
 
 ## Sample Response
  ```javascript
@@ -116,8 +122,12 @@ GET https://www.netsparkercloud.com/api/1.0/issues/allissues?Severity=low&page=1
             "History": null,
             "Tags": []
         },
+      ]
+   }
 ```
   ## Status Code and Errors
 | Code | Description |  Notes |
 | --- | --- |  --- |
-| 200 | OK |   |
+| 200 | OK |  Success |
+| 401 | Unauthorized |  The access is denied |
+| 404 | Not Found |  Invalid type. |
