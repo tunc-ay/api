@@ -1,6 +1,0 @@
-## Retrieve all issues identified by Netsparker
-Description: This endpoint lets you retrieve all issues identified by Netsparker.
-## URL
-GET https://www.netsparkercloud.com/api/1.0/issues/allissues
-## Query Parameters
-| Parameter        | Description           | Type  | Required | Notes
