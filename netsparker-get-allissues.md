@@ -21,29 +21,7 @@ GET https://www.netsparkercloud.com/api/1.0/issues/allissues
 ## Sample Request
 ```javascript
 GET https://www.netsparkercloud.com/api/1.0/issues/allissues?Severity=low&page=1
-{
-  "severity": "low"
-  "page": "1"
- }
 ```
-## Response
-| Parameter | Description | Type | Notes |
-| --- | --- | --- | --- |
-| FirstItemOnPage | ? | string |  | 
-| HasNextPage | Shows whether there is a next page | string | The value is true or false. | 
-| HasPreviousPage | Shows whether there is a previous page | string | The value is true or false. | 
-| IsFirstPage | Shows whether this is the first page | string | The value is true or false. | 
-| IsLastPage | Shows whether this is the last page | string | The value is true or false. | 
-| LastItemOnPage | Shows whether this is the last item on the page | string | The value is true or false. | 
-| List| Array of data | string |  | 
-| AssignName | the name of the person that is responsible for this vulnerability | string |  | 
-| FirstSeenDate | the data in which Netsparker identified this vulnerability | string | You can use the date format defined in your account. You can visit /account/changesettings to view the current format.  | 
-| Id | the id of the vulnerability | integer |  | 
-| IsAddressed | the action has been taken or not | string |  The value is true or false. | 
-| IsDetectedbyShark | the Netsparker Shark (IAST) identified this vulnerability or not | string |  The value is true or false. | 
-| IsPresent | the case whether the vulnerability identified still is present | string |  The value is true or false. | 
-| LastSeenDate | the last date that the vulnerability is identified. | string |  You can use the date format defined in your account. You can visit /account/changesettings to view the current format. | 
-
 
 ## Sample Response
  ```javascript
@@ -125,6 +103,24 @@ GET https://www.netsparkercloud.com/api/1.0/issues/allissues?Severity=low&page=1
       ]
    }
 ```
+## Response
+| Parameter | Description | Type | Notes |
+| --- | --- | --- | --- |
+| FirstItemOnPage | ? | string |  | 
+| HasNextPage | Shows whether there is a next page | string | The value is true or false. | 
+| HasPreviousPage | Shows whether there is a previous page | string | The value is true or false. | 
+| IsFirstPage | Shows whether this is the first page | string | The value is true or false. | 
+| IsLastPage | Shows whether this is the last page | string | The value is true or false. | 
+| LastItemOnPage | Shows whether this is the last item on the page | string | The value is true or false. | 
+| List| Array of data | string |  | 
+| AssignName | the name of the person that is responsible for this vulnerability | string |  | 
+| FirstSeenDate | the data in which Netsparker identified this vulnerability | string | You can use the date format defined in your account. You can visit /account/changesettings to view the current format.  | 
+| Id | the id of the vulnerability | integer |  | 
+| IsAddressed | the action has been taken or not | string |  The value is true or false. | 
+| IsDetectedbyShark | the Netsparker Shark (IAST) identified this vulnerability or not | string |  The value is true or false. | 
+| IsPresent | the case whether the vulnerability identified still is present | string |  The value is true or false. | 
+| LastSeenDate | the last date that the vulnerability is identified. | string |  You can use the date format defined in your account. You can visit /account/changesettings to view the current format. | 
+
   ## Status Code and Errors
 | Code | Description |  Notes |
 | --- | --- |  --- |
