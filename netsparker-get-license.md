@@ -57,7 +57,7 @@ GET https://www.netsparkercloud.com/api/1.0/account/license
 | Licenses | array of information about your license detail | string | --- |
 | Licenses/EndDate | the date in which your subscription will expire in Netsparker  | string | --- |
 | Licenses/MaximumSiteLimit | the maximum number of websites you can add to your websites | integer | --- |
-| Licenses/ProductDefinition | the Netsparker license you have | string | --- |
+| Licenses/ProductDefinition | the Netsparker license you have. It can be Standard, Team, or Enterprise | string | --- |
 | Licenses/StartDate | the date you joined Netsparker | string | You can use the date format defined in your account. You can visit /account/changesettings to view the current format. |
 | Licenses/ValidForDays | the days your account will be valid for | string | --- |
 | Licenses/Id | the identification number of your account | integer | --- |
