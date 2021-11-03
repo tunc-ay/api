@@ -5,6 +5,7 @@ GET https://www.netsparkercloud.com/api/1.0/account/license
 
 ## Headers
 | Header Name | Description | Required | Values | Notes |
+| --- | --- | --- | --- | --- | --- | 
 | Authorization | the authorization method | required |  | Basic Authentication |
 | Accept | the format of the data to be returned | required |  | application/json |
 
