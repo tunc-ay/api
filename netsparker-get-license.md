@@ -43,7 +43,7 @@ GET https://www.netsparkercloud.com/api/1.0/account/license
 ```
 ## Response Parameters
 | Parameter | Description | Type | Notes |
-| --- | --- | --- | --- | --- |
+| --- | --- |  --- | --- |
 | SubscriptionMaximumSiteLimit | the number of websites that you can add to your account | integer | --- |
 | SubscriptionSiteCount | the number of websites that you added to your account | integer | --- |
 | SubscriptionEndDate | the date in which your account will expire | string | You can use the date format defined in your account. You can visit /account/changesettings to view the current format. |
