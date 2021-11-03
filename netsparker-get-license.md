@@ -1,16 +1,12 @@
-## Retrieve all issues identified by Netsparker
-Description: This endpoint lets you retrieve all issues identified by Netsparker.
+## Retrieves the account details, such as subscription start and end date, in Netsparker.
+Description: This endpoint lets you retrieve your account information in Netsparker.
 ## URL
-GET https://www.netsparkercloud.com/api/1.0/issues/allissues
-
-## Query Parameters
-| Parameter | Description | Type | Required | Notes |
-| --- | --- | --- | --- | --- |
+GET https://www.netsparkercloud.com/api/1.0/account/license
 
 ## Headers
-| Header Name | Description | Required | Values |
-| --- | --- | --- | --- |
-| Accept | the format of the data to be returned | optional | application/json |
+| Header Name | Description | Required | Values | Notes |
+| Authorization | the authorization method | required |  | Basic Authentication |
+| Accept | the format of the data to be returned | required |  | application/json |
 
 ## Sample Request
 ```javascript
