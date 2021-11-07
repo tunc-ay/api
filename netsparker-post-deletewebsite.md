@@ -16,7 +16,7 @@ POST https://www.netsparkercloud.com/api/1.0/websites/delete
 
 ## Sample Request
 ```javascript
-GET https://www.netsparkercloud.com/api/1.0/websites/delete
+POST https://www.netsparkercloud.com/api/1.0/websites/delete
 ```
 ## Sample Response
  ```javascript
