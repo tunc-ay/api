@@ -22,9 +22,7 @@ POST https://www.netsparkercloud.com/api/1.0/websites/delete/28a539cf55e3439ff95
 ```
 ## Sample Response
  ```javascript
-{
   "The member has been deleted."
-}
 ```
 ## Response Parameters
 | Parameter | Description | Type | Notes |
