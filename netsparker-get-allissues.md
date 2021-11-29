@@ -125,5 +125,5 @@ GET https://www.netsparkercloud.com/api/1.0/issues/allissues?Severity=low&page=1
 | Code | Description |  Notes |
 | --- | --- |  --- |
 | 200 | OK |  Success |
-| 401 | Unauthorized |  The access is denied |
-| 404 | Not Found |  Invalid type. |
+| 401 | Unauthorized |  The access is denied. |
+| 404 | Not Found |  Invalid type |
